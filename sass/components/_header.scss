@@ -1,0 +1,269 @@
+.centre {
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+  }
+}
+
+.logo {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 81px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: $accent-color;
+  text-decoration: none;
+}
+.logo .logo-item {
+  color: $title-text-color;
+}
+.border {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo .text {
+  color: $white-text-color;
+}
+.footer .logo {
+  font-size: 22px;
+  line-height: 1.18;
+}
+.site-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.site-nav li {
+  @media screen and (max-width: 767px) {
+    margin: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.contacts-position {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+header {
+  position: relative;
+}
+.menu-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+}
+
+/* 
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+
+  text-align: center;
+
+  background-color: rebeccapurple;
+
+  &.is-open {
+    display: block;
+  }
+} */
+.header-contacts {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
+.site-nav li {
+  @media screen and (max-width: 767px) {
+    top: 60px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+}
+.site-nav li:last-child {
+  margin-right: 0px;
+}
+.contacts {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.contacts .link {
+  display: flex;
+  align-items: center;
+}
+.site-nav .link,
+.contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  color: $title-text-color;
+}
+.link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav .link.current {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 32px;
+  }
+
+  color: $accent-color;
+}
+.link {
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+/* .list li {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+} */
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+.list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.project .list {
+  background-color: $portfolio-bg-color;
+}
+.link:hover,
+.link:focus,
+.link {
+  color: $accent-color;
+  text-decoration: none;
+  fill: $accent-color;
+}
+
+.current {
+  position: relative;
+}
+.current::after {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: block;
+    content: '';
+
+    width: 100%;
+    height: 4px;
+    left: 0;
+
+    border-radius: 2px;
+    bottom: 0;
+
+    background-color: #2196f3;
+  }
+}
+.current::after {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    display: block;
+    content: '';
+
+    width: 100%;
+    height: 4px;
+    left: 0;
+
+    border-radius: 2px;
+    bottom: -10px;
+
+    background-color: $accent-color;
+  }
+}
+
+.contacts .link {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 10px;
+  }
+}
+
+.contacts .link {
+  @media screen and (max-width: 1199px) {
+    margin-right: 0;
+  }
+  color: inherit;
+  margin-right: 30px;
+}
+
+.link {
+  fill: #757575;
+}
+
+.contats-link:hover {
+  color: $accent-color;
+}
+.link:hover,
+.link:focus {
+  fill: $accent-color;
+}
+/* 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+ */
